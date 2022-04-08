@@ -6,10 +6,10 @@
 
 * {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
 }
 
 /* TO DO - start css with mobile first - use media queries to manage large sizes */
+
 
 .navbar-light-custom {
   background-color: var(--light);
@@ -23,3 +23,10 @@
   background-color: var(--light);
 }
 
+.custom-container {
+  text-align: center;
+}
+
+img {
+  border-radius: 50%;
+}
