@@ -1,6 +1,25 @@
 /* update with google font */
+:root {
+  --dark: #1a1a1a;
+  --light: #fff;
+}
+
 * {
   font-family: "Poppins", sans-serif;
+  font-size: 18px;
 }
 
 /* TO DO - start css with mobile first - use media queries to manage large sizes */
+
+.navbar-light-custom {
+  background-color: var(--light);
+}
+
+.navbar-light-custom .navbar-toggler-custom {
+  border-color: var(--light);
+}
+
+.bg-light-custom {
+  background-color: var(--light);
+}
+
