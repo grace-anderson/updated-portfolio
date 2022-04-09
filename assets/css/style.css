@@ -17,16 +17,20 @@
 
 /*start css with mobile first - use media queries to manage large sizes */
 
+.navbar-expand-md {
+  background: var(--light);
+}
+
 .navbar-light-custom {
   background-color: var(--light);
 }
 
-.navbar-light-custom .navbar-toggler-custom {
-  border-color: var(--light);
-}
-
 .bg-light-custom {
   background-color: var(--light);
+}
+
+.bg-light-blue-custom {
+  background-color: var(--light-blue);
 }
 
 .container-custom {
@@ -79,6 +83,20 @@ a i {
   border-color: var(--light-blue);
   box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
 }
+
+#contact-page-link {
+  cursor: pointer;
+}
+
+.text-blue-custom {
+  color: var(--blue);
+}
+
+footer i {
+  font-size: 3rem;
+}
+
+
 
 /* animation */
 html,
