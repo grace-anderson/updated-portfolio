@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="./assets/css/jass.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <!-- body ----------------------------------------------------------->
+
   <body>
     <!-- navbar -->
     <header>
@@ -81,6 +81,7 @@
         <div class="col-8 col-sm-4">
           <img
             src="./assets/img/helen-g-anderson.jpg"
+            id="corporate-img"
             class="img-fluid mx-auto d-block mt-5 pt-4 pb-4 mb-2"
             alt="photo of helen"
           />
@@ -124,49 +125,114 @@
           <button
             id="lets-work-button"
             type="button"
-            class="btn btn-primary btn-primary-custom mt-5 mb-5"
+            class="btn btn-primary btn-primary-custom btn-lg mt-5 mb-5"
           >
             Let's work together
           </button>
         </div>
       </div>
       <!-- start of portfolio  -->
-      <div class="row">
-        <div class="col-sm-6 col-lg-4 mb-4>
-          <a href="#">
-            <img src="assets/img/marvel-superhero-genie-team-project.jpg" alt="Screenshot of Marvel Superhero Genie app" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Marvel Superhero Genie</h4>
-            <div class="text-small text-muted">TO DO project description</div>
-          </a>
+      <!-- marvel superhero genie -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-3 mb-5">
+        <div class="col">
+          <div
+            class="card card-custom h-100 mb-3 shadow p-3 mb-5 bg-body rounded"
+            style="max-width: 540px"
+          >
+            <div class="row g-1 text-center">
+              <div class="col-md-4">
+                <a
+                  href="https://grace-anderson.github.io/marvel-superhero-genie/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/img/marvel-superhero-genie-team-project.jpg"
+                    class="img-fluid rounded-start"
+                    alt="Screenshot of Marvel Superhero Genie app"
+                  />
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Marvel Superhero Genie</h5>
+                  <p class="card-text">TO DO project description.</p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <a href="#">
-            <img src="assets/img/weather-dashboard-individual-assignment.jpg" alt="Screenshot of Weather Dashboard app" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Weather Dashboard</h4>
-            <div class="text-small text-muted">TO DO assignment description</div>
-          </a>
+        <!-- weather-dashboard -->
+        <div class="col">
+          <div
+            class="card card-custom h-100 mb-3 shadow p-3 mb-5 bg-body rounded"
+            style="max-width: 540px"
+          >
+            <div class="row g-1 text-center">
+              <div class="col-md-4">
+                <a
+                  href="https://grace-anderson.github.io/weather-dashboard/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/img/weather-dashboard-individual-assignment.jpg"
+                    class="img-fluid rounded-start"
+                    alt="Screenshot of Weather Dashboard app"
+                  />
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Weather Dashboard</h5>
+                  <p class="card-text">TO DO project description.</p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6 col-lg-4 mb-4">
-          <a href="#">
-            <img src="assets/img/work-day-scheduler-individual-assignment.jpg" alt="Screenshot of Work Day Scheduler app" class="rounded mb-3">
-          </a>
-          <a href="#">
-            <h4 class="mb-1">Work Day Scheduler</h4>
-            <div class="text-small text-muted">TO DO assignment description</div>
-          </a>
+        <!-- work-day-scheduler -->
+        <div class="col">
+          <div
+            class="card card-custom h-100 mb-3 shadow p-3 mb-5 bg-body rounded"
+            style="max-width: 540px"
+          >
+            <div class="row g-1 text-center">
+              <div class="col-md-4">
+                <a
+                  href="https://grace-anderson.github.io/work-day-scheduler/"
+                  target="_blank"
+                >
+                  <img
+                    src="assets/img/work-day-scheduler-individual-assignment.jpg"
+                    class="img-fluid rounded-start"
+                    alt="Screenshot of Work Day Scheduler app"
+                  />
+                </a>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Work Day Scheduler</h5>
+                  <p class="card-text">TO DO project description.</p>
+                  <p class="card-text">
+                    <small class="text-muted">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
-<!-- footer -->
+    <!-- footer -->
     <footer class="footer mt-auto mt-5 py-3 bg-light-blue-custom text-center">
       <div class="container container-fluid">
         <div class="row">
-          <div class="col-4"></div>
-          <div class="col-2">
+          <div class="col-6">
             <a href="https://github.com/grace-anderson" target="_blank">
               <i
                 class="bi bi-github img-fluid"
@@ -175,7 +241,7 @@
               ></i>
             </a>
           </div>
-          <div class="col-2">
+          <div class="col-6">
             <a
               href="https://www.linkedin.com/in/helenganderson/"
               target="_blank"
@@ -187,7 +253,6 @@
               ></i>
             </a>
           </div>
-          <div class="col-4"></div>
         </div>
         <div class="row mt-3">
           <div class="col">

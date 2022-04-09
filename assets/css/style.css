@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-img {
+img#corporate-img {
   border-radius: 50%;
   z-index: 5;
 }
@@ -92,10 +92,15 @@ a i {
   color: var(--blue);
 }
 
+.card-custom {
+  border: none;
+  width: 90%;
+  margin-left: 5%;
+}
+
 footer i {
   font-size: 3rem;
 }
-
 
 
 /* animation */
@@ -114,6 +119,7 @@ body {
 
 #bubbles {
   padding: 100px 0;
+  overflow: hidden;
 }
 
 .bubble {
