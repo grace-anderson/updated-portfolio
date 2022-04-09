@@ -59,7 +59,6 @@ a i {
   color: var(--blue);
 }
 
-
 .link-primary-custom:focus {
   color: var(--blue);
 }
@@ -90,6 +89,9 @@ body,
 
 body {
   overflow: hidden;
+  /* opacity and transition smooth opening html pages */
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 #bubbles {
@@ -136,7 +138,6 @@ body {
     margin-left: 80px;
   }
 }
-
 
 @media (min-width: 992px) {
   /* updated animation for large screens */
