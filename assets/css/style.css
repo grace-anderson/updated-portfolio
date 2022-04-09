@@ -3,6 +3,7 @@
   --dark: #1a1a1a;
   --light: #fff;
   --blue: #163359;
+  --light-blue: #8b99ac;
   --dark-green: #5a7336;
   --bright-green: #96a61f;
   --light-green: #818c2a;
@@ -11,6 +12,7 @@
 
 * {
   font-family: "Poppins", sans-serif;
+  color: var(--dark);
 }
 
 /*start css with mobile first - use media queries to manage large sizes */
@@ -27,7 +29,7 @@
   background-color: var(--light);
 }
 
-.custom-container {
+.container-custom {
   text-align: center;
 }
 
@@ -47,6 +49,36 @@ a i {
 
 .bi:hover {
   color: var(--pink);
+}
+
+.link-primary-custom {
+  color: var(--pink);
+}
+
+.link-primary-custom:hover {
+  color: var(--blue);
+}
+
+
+.link-primary-custom:focus {
+  color: var(--blue);
+}
+
+.btn.btn-primary-custom {
+  background-color: var(--pink);
+  color: var(--light);
+}
+
+.btn.btn-primary-custom:focus {
+  background-color: var(--blue);
+  border-color: var(--light-blue);
+  box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
+}
+
+.btn.btn-primary-custom:hover {
+  background-color: var(--blue);
+  border-color: var(--light-blue);
+  box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
 }
 
 /* animation */
@@ -111,12 +143,5 @@ body {
   .x1 {
     left: calc(80% + 100px);
     transform: scale(19);
-    opacity: 0.1;
-    background: var(--pink);
-    z-index: -1;
-    animation: moveclouds 15s linear infinite,
-      sideWays 4s ease-in-out infinite alternate;
-    animation-direction: alternate;
-    animation-duration: 10s;
   }
 }
