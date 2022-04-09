@@ -106,7 +106,7 @@ body,
 }
 
 body {
-  overflow: hidden;
+  /* overflow: hidden; */
   /* opacity and transition smooth opening html pages */
   opacity: 0;
   transition: opacity 0.5s;

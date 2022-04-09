@@ -1,7 +1,4 @@
-// sticky navbar
-// window.onscroll = function() {stickyNavbar()};
 
-// var navbar = document.querySelector('#search-form');
 
 //page transition 
 window.transitionToPage = function(href) {
