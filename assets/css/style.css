@@ -13,7 +13,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* TO DO - start css with mobile first - use media queries to manage large sizes */
+/*start css with mobile first - use media queries to manage large sizes */
 
 .navbar-light-custom {
   background-color: var(--light);
@@ -68,106 +68,20 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 200px;
-  -moz-border-radius: 200px;
-  -webkit-border-radius: 200px;
   position: absolute;
   animation-duration: 3s;
 }
 
-.horizontal-movement{
-  
-}
 .x1 {
   left: 25%;
-  -webkit-transform: scale(11);
-  -moz-transform: scale(11);
   transform: scale(13);
   opacity: 0.1;
-  background: #f26b6b;
+  background: var(--pink);
   z-index: -1;
   animation: moveclouds 15s linear infinite,
     sideWays 4s ease-in-out infinite alternate;
   animation-direction: alternate;
   animation-duration: 10s;
-  
-  /* -webkit-animation: moveclouds 15s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  -moz-animation: moveclouds 15s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  -o-animation: moveclouds 15s linear infinite,
-    sideWays 4s ease-in-out infinite alternate; */
-}
-
-.x2 {
-  left: 900px;
-  -webkit-transform: scale(10);
-  -moz-transform: scale(10);
-  transform: scale(10);
-  opacity: 0.2;
-  background: #818c2a;
-  z-index: -1;
-  animation: moveclouds 25s linear infinite,
-    sideWays 5s ease-in-out infinite alternate;
-  -webkit-animation: moveclouds 25s linear infinite,
-    sideWays 5s ease-in-out infinite alternate;
-  -moz-animation: moveclouds 25s linear infinite,
-    sideWays 5s ease-in-out infinite alternate;
-  -o-animation: moveclouds 25s linear infinite,
-    sideWays 5s ease-in-out infinite alternate;
-}
-
-.x3 {
-  left: 1200px;
-  -webkit-transform: scale(8);
-  -moz-transform: scale(8);
-  transform: scale(8);
-  opacity: 0.1;
-  background: #5a7336;
-  z-index: -1;
-  animation: moveclouds 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  -webkit-animation: moveclouds 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  -moz-animation: moveclouds 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-  -o-animation: moveclouds 20s linear infinite,
-    sideWays 4s ease-in-out infinite alternate;
-}
-
-.x4 {
-  left: 1700px;
-  -webkit-transform: scale(9);
-  -moz-transform: scale(9);
-  transform: scale(9);
-  opacity: 0.1;
-  background: #163359;
-  z-index: -1;
-  animation: moveclouds 18s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  -webkit-animation: moveclouds 18s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  -moz-animation: moveclouds 18s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-  -o-animation: moveclouds 18s linear infinite,
-    sideWays 2s ease-in-out infinite alternate;
-}
-
-.x5 {
-  left: 600px;
-  -webkit-transform: scale(8);
-  -moz-transform: scale(8);
-  transform: scale(8);
-  opacity: 0.2;
-  background: #96a61f;
-  z-index: -1;
-  animation: moveclouds 7s linear infinite,
-    sideWays 1s ease-in-out infinite alternate;
-  -webkit-animation: moveclouds 7s linear infinite,
-    sideWays 1s ease-in-out infinite alternate;
-  -moz-animation: moveclouds 7s linear infinite,
-    sideWays 1s ease-in-out infinite alternate;
-  -o-animation: moveclouds 7s linear infinite,
-    sideWays 1s ease-in-out infinite alternate;
 }
 
 @keyframes moveclouds {
@@ -175,7 +89,6 @@ body {
     top: 180px;
     left: 25%;
     /* margin-left: 0px; */
-
   }
   100% {
     left: calc(25% + 50px);
@@ -192,56 +105,18 @@ body {
   }
 }
 
-@-webkit-keyframes moveclouds {
-  0% {
-    top: 500px;
-  }
-  100% {
-    top: -500px;
-  }
-}
 
-@-webkit-keyframes sideWays {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 50px;
-  }
-}
-
-@-moz-keyframes moveclouds {
-  0% {
-    top: 500px;
-  }
-  100% {
-    top: -500px;
-  }
-}
-
-@-moz-keyframes sideWays {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 50px;
-  }
-}
-
-@-o-keyframes moveclouds {
-  0% {
-    top: 500px;
-  }
-  100% {
-    top: -500px;
-  }
-}
-
-@-o-keyframes sideWays {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 50px;
+@media (min-width: 992px) {
+  /* updated animation for large screens */
+  .x1 {
+    left: calc(80% + 100px);
+    transform: scale(19);
+    opacity: 0.1;
+    background: var(--pink);
+    z-index: -1;
+    animation: moveclouds 15s linear infinite,
+      sideWays 4s ease-in-out infinite alternate;
+    animation-direction: alternate;
+    animation-duration: 10s;
   }
 }
