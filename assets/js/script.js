@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 //button links between home and contact pages
 var buttonLetsWork = document.querySelector("#lets-work-button");
 var buttonGoHome = document.querySelector("#go-home-button");
+var contactPageLink = document.querySelector("#contact-page-link");
 
 var buttonLetsWorkClickHandler = function (event) {
   event.preventDefault();
@@ -32,6 +33,10 @@ var buttonGoHomeClickHandler = function (event) {
 if (buttonLetsWork) {
   buttonLetsWork.addEventListener("click", buttonLetsWorkClickHandler);
 }
+
+if (contactPageLink) {
+    contactPageLink.addEventListener("click", buttonLetsWorkClickHandler);
+  }
 
 if (buttonGoHome) {
   buttonGoHome.addEventListener("click", buttonGoHomeClickHandler);
