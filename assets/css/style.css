@@ -32,6 +32,11 @@ body {
   transition: opacity 0.5s;
 }
 
+.col-custom {
+  /* transition when resizing */
+  transition: flex-basis 500ms linear;
+}
+
 .contact-container {
   min-height: 80%;
   position: relative;
@@ -62,11 +67,15 @@ img#corporate-img {
   border-radius: 50%;
   z-index: 5;
   max-width: 60%;
+   /* transition when resizing */
+  transition: all 0.5s ease-in-out;
 }
 
 i {
   font-size: 1.6em;
   color: var(--blue);
+    /* transition when resizing */
+    transition: all 0.5s ease-in-out;
 }
 
 a i {
@@ -118,6 +127,8 @@ a i {
   border: none;
   width: 90%;
   margin-left: 5%;
+  /* resizing transition */
+  transition: all 0.5s ease-in-out;
 }
 
 footer i {
@@ -250,8 +261,6 @@ footer i {
   .card-custom {
     width: 90%;
     margin: 0;
-    /* margin-left: 5%;
-    margin-right: 0; */
   }
 
   /* animation*/
@@ -322,6 +331,11 @@ footer i {
 
 .contact-icon {
   font-size: 4 em;
+}
+
+.card-custom {
+  width: 80%;
+  margin: 0;
 }
 
   /* animation */
