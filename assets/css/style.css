@@ -59,6 +59,11 @@ body {
   background-color: var(--light-blue);
 }
 
+.bg-blue-custom {
+  background-color: var(--blue);
+}
+
+
 .container-custom {
   text-align: center;
 }
@@ -252,10 +257,6 @@ footer i {
     border-radius: 50%;
     z-index: 5;
     max-width: 60%;
-  }
-
-  .custom-row-lg {
-    margin-left: 1%;
   }
 
   .card-custom {
