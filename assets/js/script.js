@@ -47,5 +47,5 @@ if (buttonGoHome) {
 }
 
 if (buttonGoToProjects) {
-  button.addEventListener("click", buttonGoToProjectsClickHandler)
+  buttonGoToProjects.addEventListener("click", buttonGoToProjectsClickHandler)
 }

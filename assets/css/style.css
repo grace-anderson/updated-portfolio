@@ -232,6 +232,11 @@ footer i {
     margin-left: 20%;
   }
 
+  #custom-project-margin {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
   /* animation*/
   .x1 {
     left: calc(80% + 100px);
@@ -261,6 +266,14 @@ footer i {
   .card-custom {
     width: 90%;
     margin: 0;
+  }
+  
+  #h2-align {
+    margin-left: -16px;
+  }
+
+  #h2-margin {
+    margin-bottom: 3rem;
   }
 
   /* animation*/
