@@ -268,14 +268,9 @@ footer i {
     margin: 0;
   }
   
-  #h2-align {
-    margin-left: -16px;
+  .h2-align {
+    margin-left: -8px;
   }
-
-  #h2-margin {
-    margin-bottom: 3rem;
-  }
-
   /* animation*/
   .x1 {
     left: calc(80% + 100px);
