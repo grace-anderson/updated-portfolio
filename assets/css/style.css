@@ -71,19 +71,34 @@ img#corporate-img {
   border-radius: 50%;
   z-index: 5;
   max-width: 60%;
-   /* transition when resizing */
+  /* transition when resizing */
   transition: all 0.5s ease-in-out;
 }
 
 i {
   font-size: 1.6em;
   color: var(--blue);
-    /* transition when resizing */
-    transition: all 0.5s ease-in-out;
+  /* transition when resizing */
+  transition: all 0.5s ease-in-out;
 }
 
 a i {
   transition: all 0.3s linear;
+}
+
+.card-text a {
+  color: var(--dark);
+  text-decoration: none;
+} 
+
+.card-text a:hover {
+  color: var(--bright-green);
+  font-weight: 500;
+}
+
+.card-text a:focus {
+  color: var(--bright-green);
+  font-weight: 500;
 }
 
 .bi:hover {
@@ -145,6 +160,11 @@ a i {
   /* resizing transition */
   transition: all 0.5s ease-in-out;
 }
+
+.card-title-custom {
+  color: var(--pink);
+}
+
 
 footer i {
   font-size: 3rem;
@@ -278,10 +298,11 @@ footer i {
     width: 90%;
     margin: 0;
   }
-  
+
   .h2-align {
     margin-left: -8px;
   }
+
   /* animation*/
   .x1 {
     left: calc(80% + 100px);
@@ -322,7 +343,7 @@ footer i {
       sideWays 16s ease-in-out infinite alternate;
     animation-delay: 6s;
   }
-  
+
   .x3 {
     transform: scale(3);
     animation: moveclouds 50s linear infinite,
@@ -338,24 +359,22 @@ footer i {
       margin-left: 420px;
     }
   }
-
 }
 
 /* xl layout */
 @media (min-width: 1200px) {
+  .icons {
+    display: none;
+  }
 
-.icons {
-  display: none;
-}
+  .contact-icon {
+    font-size: 4 em;
+  }
 
-.contact-icon {
-  font-size: 4 em;
-}
-
-.card-custom {
-  width: 80%;
-  margin: 0;
-}
+  .card-custom {
+    width: 80%;
+    margin: 0;
+  }
 
   /* animation */
   .x1 {
@@ -371,7 +390,7 @@ footer i {
       sideWays 16s ease-in-out infinite alternate;
     animation-delay: 2s;
   }
-  
+
   .x3 {
     transform: scale(3);
     animation: moveclouds 75s linear infinite,
@@ -387,11 +406,9 @@ footer i {
       margin-left: 560px;
     }
   }
-
 }
 
 @media (min-width: 1400px) {
-
   img#corporate-img {
     border-radius: 50%;
     z-index: 5;
@@ -406,7 +423,7 @@ footer i {
   .x2 {
     animation: moveclouds 80s linear infinite,
       sideWays 24s ease-in-out infinite alternate;
-      animation-delay: 2s;
+    animation-delay: 2s;
   }
 
   .x3 {
@@ -422,4 +439,3 @@ footer i {
     }
   }
 }
-
