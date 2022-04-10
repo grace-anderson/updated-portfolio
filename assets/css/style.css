@@ -119,6 +119,17 @@ a i {
   box-shadow: 0 0 0 0.25rem rgb(69 92 122 / 50%);
 }
 
+.btn.btn-secondary-custom {
+  background-color: var(--blue);
+  color: var(--light);
+}
+
+.btn.btn-secondary-custom:hover {
+  background-color: var(--pink);
+  border-color: var(--bright-green);
+  box-shadow: 0 0 0 0.25rem rgb(150 166 31 / 50%);
+}
+
 #contact-page-link {
   cursor: pointer;
 }

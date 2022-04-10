@@ -17,6 +17,7 @@ var buttonLetsWork = document.querySelector("#lets-work-button");
 var buttonGoHome = document.querySelector("#go-home-button");
 var contactPageLink = document.querySelector("#contact-page-link");
 var buttonGoToProjects = document.querySelector("#go-to-projects-button");
+var buttonDownloadResume = document.querySelector('#download-resume');
 
 var buttonLetsWorkClickHandler = function (event) {
   event.preventDefault();
@@ -31,6 +32,10 @@ var buttonGoHomeClickHandler = function (event) {
 var buttonGoToProjectsClickHandler = function (event) {
   event.preventDefault();
   document.location = "index.html#project-anchor";
+}
+
+var buttonDownloadResumeEventHandler = function (event) {
+  document.location = "./assets/docs/HelenAnderson_CV_developer_20220410.pdf"
 }
 
 // direct each event to its function
@@ -48,4 +53,8 @@ if (buttonGoHome) {
 
 if (buttonGoToProjects) {
   buttonGoToProjects.addEventListener("click", buttonGoToProjectsClickHandler)
+}
+
+if (buttonDownloadResume) {
+  buttonDownloadResume.addEventListener("click", buttonDownloadResumeEventHandler)
 }
