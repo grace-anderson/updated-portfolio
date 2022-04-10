@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 var buttonLetsWork = document.querySelector("#lets-work-button");
 var buttonGoHome = document.querySelector("#go-home-button");
 var contactPageLink = document.querySelector("#contact-page-link");
+var buttonGoToProjects = document.querySelector("#go-to-projects-button");
 
 var buttonLetsWorkClickHandler = function (event) {
   event.preventDefault();
@@ -27,6 +28,12 @@ var buttonGoHomeClickHandler = function (event) {
   document.location = "index.html";
 };
 
+var buttonGoToProjectsClickHandler = function (event) {
+  event.preventDefault();
+  document.location = "index.html#project-anchor";
+}
+
+// direct each event to its function
 if (buttonLetsWork) {
   buttonLetsWork.addEventListener("click", buttonLetsWorkClickHandler);
 }
@@ -37,4 +44,8 @@ if (contactPageLink) {
 
 if (buttonGoHome) {
   buttonGoHome.addEventListener("click", buttonGoHomeClickHandler);
+}
+
+if (buttonGoToProjects) {
+  button.addEventListener("click", buttonGoToProjectsClickHandler)
 }
