@@ -164,9 +164,10 @@ a i {
 }
 
 .card-custom {
+  flex: 0 1 auto;
+  align-self: center;
   border: none;
   width: 90%;
-  margin-left: 5%;
   /* resizing transition */
   transition: all 0.5s ease-in-out;
 }
@@ -265,10 +266,6 @@ footer i {
 
   i {
     font-size: 2em;
-  }
-
-  .card-custom {
-    flex: 0 1 auto;
   }
 
   /* animation*/
