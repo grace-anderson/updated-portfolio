@@ -268,6 +268,10 @@ footer i {
     font-size: 2em;
   }
 
+  .card-custom {
+    width: 60%;
+  }
+
   /* animation*/
   .x1 {
     left: calc(80% + 100px);
@@ -292,11 +296,6 @@ footer i {
     border-radius: 50%;
     z-index: 5;
     max-width: 60%;
-  }
-
-  .card-custom {
-    width: 90%;
-    margin: 0;
   }
 
   .h2-align {
@@ -328,6 +327,10 @@ footer i {
 
 /* lg layout */
 @media (min-width: 992px) {
+  .card-custom {
+    width: 30%;
+  }
+
   /* animation */
   .x1 {
     left: calc(80% + 100px);
@@ -369,11 +372,6 @@ footer i {
 
   .contact-icon {
     font-size: 4 em;
-  }
-
-  .card-custom {
-    width: 80%;
-    margin: 0;
   }
 
   /* animation */
