@@ -201,37 +201,40 @@ footer i {
 
 .x1 {
   left: 25%;
-  transform: scale(5);
+  bottom: 1%;
+  transform: scale(4);
   opacity: 0.1;
   background: var(--pink);
   z-index: -1;
   animation: moveclouds 21s linear infinite,
     sideWays 3s ease-in-out infinite alternate;
-  animation-delay: 1s;
+  transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
 
 .x2 {
   left: 50%;
+  bottom: 1%;
   transform: scale(3);
   opacity: 0.1;
   background: var(--blue);
   z-index: -1;
   animation: moveclouds 20s linear infinite,
     sideWays 4s ease-in-out infinite alternate;
-  animation-delay: 3s;
+  transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
 
 .x3 {
   left: 75%;
+  bottom: 1%;
   transform: scale(2);
   opacity: 0.1;
   background: var(--bright-green);
   z-index: -1;
   animation: moveclouds 25s linear infinite,
     sideWays 5s ease-in-out infinite alternate;
-  animation-delay: 5s;
+  transition: all 0.5s ease-in-out;
   overflow: hidden;
 }
 
@@ -273,13 +276,6 @@ footer i {
   }
 
   /* animation*/
-  .x1 {
-    left: calc(80% + 100px);
-    transform: scale(6);
-    animation: moveclouds 49s linear infinite,
-      sideWays 7s ease-in-out infinite alternate;
-  }
-
   @keyframes sideWays {
     0% {
       margin-left: 0px;
@@ -303,18 +299,6 @@ footer i {
   }
 
   /* animation*/
-  .x1 {
-    left: calc(80% + 100px);
-    transform: scale(6);
-    animation: moveclouds 49s linear infinite,
-      sideWays 7s ease-in-out infinite alternate;
-  }
-
-  .x2 {
-    animation: moveclouds 40s linear infinite,
-      sideWays 8s ease-in-out infinite alternate;
-  }
-
   @keyframes sideWays {
     0% {
       margin-left: 0px;
@@ -334,24 +318,25 @@ footer i {
   /* animation */
   .x1 {
     left: calc(80% + 100px);
-    transform: scale(9);
+    transform: scale(7);
     animation: moveclouds 98s linear infinite,
       sideWays 14s ease-in-out infinite alternate;
+    transition: all 0.5s ease-in-out;
   }
 
   .x2 {
-    transform: scale(6);
+    transform: scale(5);
     opacity: 0.1;
     animation: moveclouds 40s linear infinite,
       sideWays 16s ease-in-out infinite alternate;
-    animation-delay: 6s;
+    transition: all 0.5s ease-in-out;
   }
 
   .x3 {
     transform: scale(3);
     animation: moveclouds 50s linear infinite,
       sideWays 10s ease-in-out infinite alternate;
-    animation-delay: 10s;
+    transition: all 0.5s ease-in-out;
   }
 
   @keyframes sideWays {
@@ -375,26 +360,6 @@ footer i {
   }
 
   /* animation */
-  .x1 {
-    left: calc(80% + 100px);
-    animation: moveclouds 147s linear infinite,
-      sideWays 21s ease-in-out infinite alternate;
-  }
-
-  .x2 {
-    transform: scale(6);
-    opacity: 0.1;
-    animation: moveclouds 80s linear infinite,
-      sideWays 16s ease-in-out infinite alternate;
-    animation-delay: 2s;
-  }
-
-  .x3 {
-    transform: scale(3);
-    animation: moveclouds 75s linear infinite,
-      sideWays 15s ease-in-out infinite alternate;
-    animation-delay: 6s;
-  }
 
   @keyframes sideWays {
     0% {
@@ -413,21 +378,7 @@ footer i {
     max-width: 40%;
   }
 
-  /* animation */
-  .x1 {
-    animation-delay: 20s;
-  }
-
-  .x2 {
-    animation: moveclouds 80s linear infinite,
-      sideWays 24s ease-in-out infinite alternate;
-    animation-delay: 2s;
-  }
-
-  .x3 {
-    animation-delay: 8s;
-  }
-
+/* animation */
   @keyframes sideWays {
     0% {
       margin-left: 0px;
