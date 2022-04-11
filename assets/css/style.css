@@ -167,7 +167,7 @@ a i {
   flex: 0 1 auto;
   align-self: center;
   border: none;
-  width: 90%;
+  width: 80%;
   /* resizing transition */
   transition: all 0.5s ease-in-out;
 }
