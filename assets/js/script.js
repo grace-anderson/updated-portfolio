@@ -35,7 +35,7 @@ var buttonGoToProjectsClickHandler = function (event) {
 }
 
 var buttonDownloadResumeEventHandler = function (event) {
-  document.location = "./assets/docs/HelenAnderson_CV_developer_20220410.pdf"
+  document.location = "./assets/docs/HelenAnderson_CV_developer_20220414.pdf"
 }
 
 // direct each event to its function
