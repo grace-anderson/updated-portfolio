@@ -4,9 +4,7 @@
   --light: #fff;
   --blue: #163359;
   --light-blue: #8b99ac;
-  --dark-green: #5a7336;
   --bright-green: #96a61f;
-  --light-green: #818c2a;
   --pink: #f26b6b;
 }
 
@@ -139,6 +137,12 @@ a i {
   color: var(--light);
 }
 
+.btn.btn-secondary-custom:focus {
+  background-color: var(--pink);
+  border-color: var(--bright-green);
+  box-shadow: 0 0 0 0.25rem rgb(150 166 31 / 50%);
+}
+
 .btn.btn-secondary-custom:hover {
   background-color: var(--pink);
   border-color: var(--bright-green);
@@ -182,11 +186,9 @@ footer i {
 }
 
 /* animation */
-#bubbles {
-  height: 100%;
-}
 
 #bubbles {
+  height: 100%;
   padding: 100px 0;
   overflow: hidden;
 }
